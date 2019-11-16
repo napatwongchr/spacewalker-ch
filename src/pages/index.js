@@ -50,7 +50,7 @@ const IndexPage = () => {
       <Global
         styles={css`
           body {
-            background: black;
+            background: #1f1f1f;
           }
         `}
       />
