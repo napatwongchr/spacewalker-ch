@@ -88,6 +88,9 @@ const IndexPage = () => {
               css={css`
                 margin-right: 40px;
                 cursor: pointer;
+                @media (max-width: 576px) {
+                  margin-right: 0px;
+                }
               `}
               width={90}
               height={90}
