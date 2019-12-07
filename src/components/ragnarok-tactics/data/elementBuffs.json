@@ -1,0 +1,55 @@
+{
+  "Fraction Expert": {
+    "conditions": {
+      "Scissors": 3,
+      "Rock": 3,
+      "Paper": 3
+    },
+    "isSomeConditions": true,
+    "effect": "Max HP +10%\nATK +8%\nMATK +8%"
+  },
+  "Elf Knots": {
+    "conditions": {
+      "Scissors": 5
+    },
+    "effect": "Max HP +15%\nATK 20%\nMATK +15%\nDMG +8%"
+  },
+  "Chain Guardian": {
+    "conditions": {
+      "Rock": 5
+    },
+    "effect": "Max HP +20%\nATK +15%\nMATK +15%\nIncoming Magic DMG reduce +10%"
+  },
+  "Void Barrier": {
+    "conditions": {
+      "Paper": 5
+    },
+    "effect": "Max HP +15%\nATK +15%\nMATK +20%\nCRT +8%"
+  },
+  "Nether World": {
+    "conditions": {
+      "White": 3,
+      "Black": 2
+    },
+    "effect": "Max HP +18%\nATK +12%\nMATK +12%"
+  },
+  "Sky Power": {
+    "conditions": {
+      "White": 2,
+      "Black": 3
+    },
+    "effect": "Max HP +12%\nATK +18%\nMATK +12%"
+  },
+  "Magic Gate": {
+    "conditions": {
+      "Black": 5
+    },
+    "effect": "Max HP +25%\nATK +18%\nMATK +18%\nATK SPD +9%"
+  },
+  "Holy Spirit": {
+    "conditions": {
+      "White": 5
+    },
+    "effect": "Max HP +25%\nATK +18%\nMATK +18%\nIncoming Phys DMG reduce -12%"
+  }
+}

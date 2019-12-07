@@ -1,0 +1,101 @@
+{
+  "Death Melody": {
+    "conditions": {
+      "Dark": 3
+    },
+    "effect": "Units with Dark element ignore 7% DEF of targets when attacking."
+  },
+  "Midnight Wither": {
+    "conditions": {
+      "Dark": 6
+    },
+    "effect": "Units with Dark element ignore 11% DEF of targets and have 10% chance to make them in Dark status when attacking."
+  },
+  "Light Surround": {
+    "conditions": {
+      "Light": 3
+    },
+    "effect": "Units with Light element have 8% chance to cast a shield (10% self Max HP) for 5 sec when being attacked."
+  },
+  "Vortext": {
+    "conditions": {
+      "Dark": 4,
+      "Light": 4
+    },
+    "effect": "Units with Dark and Light element have 8% change to make targets silent for 4 sec when attacking."
+  },
+  "Rapid Winnd": {
+    "conditions": {
+      "Wind": 3
+    },
+    "effect": "Units with Wind element have ATK SPD +8%"
+  },
+  "Hurricane Rage": {
+    "conditions": {
+      "Wind": 6
+    },
+    "effect": "All units have ATK SPD +8% and units with Wind element have extra CRT +6%"
+  },
+  "Quick Flame": {
+    "conditions": {
+      "Fire": 3
+    },
+    "effect": "Units with Fire element have ATK and MATK +8%"
+  },
+  "Energy Flame": {
+    "conditions": {
+      "Fire": 6
+    },
+    "effect": "Units with Fire element have ATK and MATK +12% and Life steal effect +10% when attacking"
+  },
+  "Forest Song": {
+    "conditions": {
+      "Earth": 3
+    },
+    "effect": "Units with Earth element have DEF +8% and DEF +100"
+  },
+  "Earth Shield": {
+    "conditions": {
+      "Earth": 6
+    },
+    "effect": "Units with Earth element have DEF +8%, MDEF +8% and DEF +100, MDEF +200"
+  },
+  "Life Fountain": {
+    "conditions": {
+      "Water": 3
+    },
+    "effect": "All units have Max HP +6%"
+  },
+  "Healing Tides": {
+    "conditions": {
+      "Water": 6
+    },
+    "effect": "All units have Max HP +9% and recover self HP (0.3% MAX HP) every sec."
+  },
+  "Holy Prayer": {
+    "conditions": {
+      "Light": 6
+    },
+    "effect": "Units with Light element case shield (15% Max HP, 8 sec) when battle starts. All units have 8% chance to case shield (10% Max HP, 5 sec) when being attacked."
+  },
+  "Doomdays": {
+    "conditions": {
+      "Wind": 2,
+      "Fire": 2,
+      "Earth": 2,
+      "Water": 2
+    },
+    "effect": "All units in lineup have CRT +8% and CRT DMG +30%."
+  },
+  "Skyfall God": {
+    "conditions": {
+      "Wind": 1,
+      "Fire": 1,
+      "Earth": 1,
+      "Water": 1,
+      "Dark": 1,
+      "Light": 1
+    },
+    "effect": "Initial MP +3 And MP Recovery Speed +15% when battle starts."
+  }
+}

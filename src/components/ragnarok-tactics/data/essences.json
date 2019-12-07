@@ -1,0 +1,221 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Thor",
+      "aura": "Light",
+      "level": "Legendary",
+      "additionalAura": "Dark"
+    },
+    {
+      "id": "2",
+      "name": "Frigg",
+      "aura": "Light",
+      "level": "Legendary",
+      "additionalAura": ""
+    },
+    {
+      "id": "3",
+      "name": "Hildr",
+      "aura": "Light",
+      "level": "Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "4",
+      "name": "Tiatse",
+      "aura": "Light",
+      "level": "Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "5",
+      "name": "Odin",
+      "aura": "Fire",
+      "level": "Legendary",
+      "additionalAura": "Earth"
+    },
+    {
+      "id": "6",
+      "name": "Berial",
+      "aura": "Fire",
+      "level": "Legendary",
+      "additionalAura": "Dark"
+    },
+    {
+      "id": "7",
+      "name": "Skade",
+      "aura": "Fire",
+      "level": "Super Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "8",
+      "name": "Budle",
+      "aura": "Fire",
+      "level": "Super Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "9",
+      "name": "Thrud",
+      "aura": "Fire",
+      "level": "Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "10",
+      "name": "Ymer",
+      "aura": "Fire",
+      "level": "Super Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "11",
+      "name": "Sif",
+      "aura": "Water",
+      "level": "Legendary",
+      "additionalAura": ""
+    },
+    {
+      "id": "12",
+      "name": "Laevatain",
+      "aura": "Water",
+      "level": "Legendary",
+      "additionalAura": ""
+    },
+    {
+      "id": "13",
+      "name": "Fenrir",
+      "aura": "Water",
+      "level": "Super Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "14",
+      "name": "Gronru",
+      "aura": "Water",
+      "level": "Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "15",
+      "name": "Surtr",
+      "aura": "Water",
+      "level": "Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "16",
+      "name": "Leviathan",
+      "aura": "Wind",
+      "level": "Legendary",
+      "additionalAura": ""
+    },
+    {
+      "id": "17",
+      "name": "Beelzebub",
+      "aura": "Wind",
+      "level": "Legendary",
+      "additionalAura": ""
+    },
+    {
+      "id": "18",
+      "name": "Hoder",
+      "aura": "Wind",
+      "level": "Super Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "19",
+      "name": "Yggdrasil",
+      "aura": "Wind",
+      "level": "Super Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "20",
+      "name": "Baldur",
+      "aura": "Wind",
+      "level": "Super Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "21",
+      "name": "Asmodeus",
+      "aura": "Earth",
+      "level": "Legendary",
+      "additionalAura": ""
+    },
+    {
+      "id": "22",
+      "name": "Freyja",
+      "aura": "Earth",
+      "level": "Super Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "23",
+      "name": "Heimdall",
+      "aura": "Earth",
+      "level": "Super Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "24",
+      "name": "Alvitr",
+      "aura": "Earth",
+      "level": "Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "25",
+      "name": "Brynhidr",
+      "aura": "Earth",
+      "level": "Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "26",
+      "name": "Samael",
+      "aura": "Earth",
+      "level": "Legendary",
+      "additionalAura": ""
+    },
+    {
+      "id": "27",
+      "name": "Mammon",
+      "aura": "Dark",
+      "level": "Legendary",
+      "additionalAura": "Fire"
+    },
+    {
+      "id": "28",
+      "name": "Beowulf",
+      "aura": "Dark",
+      "level": "Super Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "29",
+      "name": "Loki",
+      "aura": "Dark",
+      "level": "Super Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "30",
+      "name": "Tyr",
+      "aura": "Dark",
+      "level": "Super Rare",
+      "additionalAura": ""
+    },
+    {
+      "id": "31",
+      "name": "Lucifer",
+      "aura": "Dark",
+      "level": "Legendary",
+      "additionalAura": ""
+    }
+  ]
+}

@@ -63,6 +63,7 @@ const IndexPage = () => {
         width={256}
         height={256}
         src={spacewalkerIcon}
+        alt="spacewalker icon"
       />
       <div
         css={css`
