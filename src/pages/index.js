@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { Global, css, keyframes } from "@emotion/core"
 
 import SEO from "../components/seo"
@@ -65,11 +66,15 @@ const IndexPage = () => {
         src={spacewalkerIcon}
         alt="spacewalker icon"
       />
+      <Link css={styles.card} to="/ragnarok-tactics-simulator">
+        Ragnarok Tactics Team Simulator
+      </Link>
       <div
         css={css`
           display: flex;
           justify-content: center;
           align-items: center;
+          margin-top: 20px;
           @media (max-width: 576px) {
             display: flex;
             flex-direction: column;
@@ -103,6 +108,16 @@ const IndexPage = () => {
       </div>
     </div>
   )
+}
+
+const styles = {
+  card: css`
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  `,
 }
 
 const animation = {
