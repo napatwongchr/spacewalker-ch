@@ -323,6 +323,15 @@
       "auras": ["Earth"],
       "additionalAuras": [],
       "isAdditionalAuraCheck": true
+    },
+    {
+      "id": "37",
+      "name": "Antonio",
+      "essence": "",
+      "element": "Rock",
+      "auras": ["Light"],
+      "additionalAuras": [],
+      "isAdditionalAuraCheck": true
     }
   ]
 }

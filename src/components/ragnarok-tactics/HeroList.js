@@ -78,7 +78,7 @@ const styles = {
     justify-content: center;
     flex-wrap: wrap;
     overflow-y: scroll;
-    max-height: 85%;
+    max-height: 86%;
   `,
   monster: css`
     display: inline;
