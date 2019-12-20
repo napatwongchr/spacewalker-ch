@@ -7,6 +7,7 @@ import HeroList from "../components/ragnarok-tactics/HeroList"
 import ResonanceCalArea from "../components/ragnarok-tactics/ResonanceCalArea"
 import wallpaper from "../images/main-bg.png"
 
+import { mediaQuery } from "../utils"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 function RagnarokTacticsPage() {
@@ -20,6 +21,9 @@ function RagnarokTacticsPage() {
       />
       <Global
         styles={css`
+          body {
+            background-color: #070509;
+          }
           img {
             margin-bottom: 0;
           }
@@ -40,6 +44,9 @@ const styles = {
     height: 100vh;
     display: flex;
     background-image: url(${wallpaper});
+    ${mediaQuery[0]} {
+      flex-direction: column;
+    }
   `,
 }
 

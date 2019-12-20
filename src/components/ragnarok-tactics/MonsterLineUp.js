@@ -2,6 +2,7 @@ import React, { useState, Fragment } from "react"
 import Select, { components } from "react-select"
 import { Modal, Button, Tabs, Tab, Form } from "react-bootstrap"
 import { css } from "@emotion/core"
+import { mediaQuery } from "../../utils"
 import essencesData from "./data/essences"
 
 function MonsterLineUp({ monsterList, setMonsterList }) {
@@ -63,8 +64,6 @@ function MonsterLineUp({ monsterList, setMonsterList }) {
   let monsterFromList =
     monsterList.find(monster => monster.id === selectedMonster) || {}
 
-  // console.log()
-
   return (
     <div css={styles.container}>
       {monsterList.length ? (
@@ -98,18 +97,22 @@ function MonsterLineUp({ monsterList, setMonsterList }) {
                 height={70}
                 alt={monster.name}
               />
-              <div css={styles.auraDetail}>
-                {monster.isAdditionalAuraCheck &&
-                  Boolean(monster.additionalAuras.length) && (
-                    <span css={styles.auraUnlockText}>Unlocked</span>
+              <div css={styles.monsterDetails}>
+                <div css={styles.auraDetail}>
+                  {monster.isAdditionalAuraCheck &&
+                    Boolean(monster.additionalAuras.length) && (
+                      <span css={styles.auraUnlockText}>Unlocked</span>
+                    )}
+                  {monster.essence && (
+                    <span css={styles.essenceUnlock}>
+                      {monster.essence.label}
+                    </span>
                   )}
-                {monster.essence && (
-                  <span css={styles.essenceUnlock}>
-                    {monster.essence.label}
-                  </span>
-                )}
+                </div>
+                <div css={styles.monsterNameContainer}>
+                  <span css={styles.monsterName}>{monster.name}</span>
+                </div>
               </div>
-              <span css={styles.monsterName}>{monster.name}</span>
             </div>
           )
         })
@@ -205,6 +208,10 @@ const styles = {
   container: css`
     display: flex;
     justify-content: center;
+    ${mediaQuery[0]} {
+      flex-direction: column;
+      justify-content: center;
+    }
   `,
   optionCustomStyle: {
     menu: (provided, state) => ({
@@ -230,10 +237,23 @@ const styles = {
     width: 140px;
     height: 180px;
     margin: 0 10px;
+    ${mediaQuery[0]} {
+      width: 100%;
+      max-height: 100px;
+      margin: 20px 0 0 0;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
   `,
   monsterImage: css`
     margin-top: 20px;
     margin-bottom: 0px;
+    ${mediaQuery[0]} {
+      margin-top: 0px;
+    }
+  `,
+  monsterNameContainer: css`
+    text-align: center;
   `,
   monsterName: css`
     font-size: 20px;
@@ -242,9 +262,20 @@ const styles = {
   essenceUnlock: css`
     margin-left: 10px;
   `,
+  monsterDetails: css`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ${mediaQuery[0]} {
+      margin-left: 20px;
+    }
+  `,
   auraDetail: css`
     display: felx;
     margin-top: 10px;
+    ${mediaQuery[0]} {
+      flex-direction: column;
+    }
   `,
   noCardInfoBox: css`
     display: flex;

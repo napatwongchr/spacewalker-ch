@@ -2,7 +2,7 @@ import React from "react"
 import { css } from "@emotion/core"
 import MonsterLineUp from "./MonsterLineUp"
 import ResonanceSummary from "./ResonanceSummary"
-
+import { mediaQuery } from "../../utils"
 import MONSTERS from "./data/monsters.json"
 
 const uuidv4 = require("uuid/v4")
@@ -59,6 +59,9 @@ const styles = {
     width: 100vw;
     background-color: rgba(26.1, 25.9, 31.5, 0.8);
     padding: 0px 50px;
+    ${mediaQuery[0]} {
+      height: 100%;
+    }
   `,
   resonanceCalHeading: css`
     font-size: 50px;
@@ -67,6 +70,10 @@ const styles = {
     justify-content: center;
     margin: 30px 0;
     color: white;
+    ${mediaQuery[0]} {
+      font-size: 35px;
+      text-align: center;
+    }
   `,
   footer: css`
     position: absolute;
