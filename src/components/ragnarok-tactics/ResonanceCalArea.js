@@ -59,9 +59,6 @@ const styles = {
     width: 100vw;
     background-color: rgba(26.1, 25.9, 31.5, 0.8);
     padding: 0px 50px;
-    ${mediaQuery[0]} {
-      height: 100%;
-    }
   `,
   resonanceCalHeading: css`
     font-size: 50px;
@@ -71,6 +68,10 @@ const styles = {
     margin: 30px 0;
     color: white;
     ${mediaQuery[0]} {
+      font-size: 35px;
+      text-align: center;
+    }
+    ${mediaQuery[2]} {
       font-size: 35px;
       text-align: center;
     }

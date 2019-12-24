@@ -246,6 +246,10 @@ const styles = {
       text-align: center;
       margin-top: 20px;
     }
+    ${mediaQuery[2]} {
+      text-align: center;
+      margin-top: 20px;
+    }
   `,
   buffsHeading: css`
     width: 100%;
@@ -278,9 +282,16 @@ const styles = {
     ${mediaQuery[0]} {
       flex-direction: column;
     }
+    ${mediaQuery[2]} {
+      flex-direction: column;
+    }
   `,
   resonanceSummaryBonusContainer: css`
     ${mediaQuery[0]} {
+      display: flex;
+      justify-content: center;
+    }
+    ${mediaQuery[2]} {
       display: flex;
       justify-content: center;
     }
@@ -296,6 +307,11 @@ const styles = {
     ${mediaQuery[0]} {
       flex-direction: column;
       justify-content: center;
+    }
+    ${mediaQuery[2]} {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   `,
   resonanceSummaryElementBuffs: css`

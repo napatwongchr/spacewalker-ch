@@ -74,6 +74,10 @@ const styles = {
       min-width: 100vw;
       max-height: 250px;
     }
+    ${mediaQuery[2]} {
+      min-width: 100vw;
+      max-height: 250px;
+    }
   `,
   heading: css`
     letter-spacing: 3px;

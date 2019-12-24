@@ -47,6 +47,12 @@ const styles = {
     ${mediaQuery[0]} {
       flex-direction: column;
     }
+    ${mediaQuery[2]} {
+      flex-direction: column;
+    }
+    ${mediaQuery[3]} {
+      background-repeat: no-repeat;
+    }
   `,
 }
 
