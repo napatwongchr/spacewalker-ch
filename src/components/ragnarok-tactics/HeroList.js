@@ -98,11 +98,11 @@ const styles = {
     overflow-y: scroll;
     max-height: 86%;
     ${mediaQuery[0]} {
-      max-height: 60%;
+      height: 230px;
       padding: 0 30px;
     }
     ${mediaQuery[2]} {
-      max-height: 60%;
+      height: 230px;
       padding: 0 30px;
     }
   `,
