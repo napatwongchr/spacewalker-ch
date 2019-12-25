@@ -279,18 +279,6 @@ const styles = {
       flex-direction: column;
     }
   `,
-  noCardInfoBox: css`
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 24px;
-    width: 100%;
-    border: 3px dashed rgb(238, 238, 238);
-    border-radius: 3px;
-    color: white;
-    padding: 70px 0;
-    letter-spacing: 3px;
-  `,
   cardDeleteBtn: css`
     position: absolute;
     top: 6px;

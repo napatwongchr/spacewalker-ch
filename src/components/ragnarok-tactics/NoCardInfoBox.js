@@ -1,4 +1,5 @@
 import React from "react"
+import { css } from "@emotion/core"
 
 function NoCardInfoBox() {
   let windowWidth = Math.max(
@@ -24,6 +25,21 @@ function NoCardInfoBox() {
       <span>Drag monster here !</span>
     </div>
   )
+}
+
+const styles = {
+  noCardInfoBox: css`
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    border: 3px dashed rgb(238, 238, 238);
+    border-radius: 3px;
+    color: white;
+    padding: 70px 0;
+    letter-spacing: 3px;
+  `,
 }
 
 export default NoCardInfoBox
