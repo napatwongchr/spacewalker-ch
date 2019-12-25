@@ -2,7 +2,7 @@ import React from "react"
 import { css } from "@emotion/core"
 import MonsterLineUp from "./MonsterLineUp"
 import ResonanceSummary from "./ResonanceSummary"
-
+import { mediaQuery } from "../../utils"
 import MONSTERS from "./data/monsters.json"
 
 const uuidv4 = require("uuid/v4")
@@ -67,6 +67,14 @@ const styles = {
     justify-content: center;
     margin: 30px 0;
     color: white;
+    ${mediaQuery[0]} {
+      font-size: 35px;
+      text-align: center;
+    }
+    ${mediaQuery[2]} {
+      font-size: 35px;
+      text-align: center;
+    }
   `,
   footer: css`
     position: absolute;

@@ -1,6 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 import MONSTERS from "./data/monsters.json"
+import { mediaQuery } from "../../utils"
 
 const uuidv4 = require("uuid/v4")
 
@@ -9,7 +10,15 @@ function MonsterPoolList({ monsterList, setMonsterList }) {
     e.dataTransfer.setData("id", heroId)
   }
 
+  const handleOnTouchStartCapture = clickedHeroId => e => {
+    placeMonsterToArea(clickedHeroId)
+  }
+
   const handleOnDoubleClick = clickedHeroId => e => {
+    placeMonsterToArea(clickedHeroId)
+  }
+
+  const placeMonsterToArea = clickedHeroId => {
     if (monsterList.length < 5) {
       let filteredHero = MONSTERS.data
         .filter(hero => hero.id === clickedHeroId)
@@ -40,6 +49,7 @@ function MonsterPoolList({ monsterList, setMonsterList }) {
               key={monster.id}
               css={styles.monster}
               draggable
+              onTouchStartCapture={handleOnTouchStartCapture(monster.id)}
               onDragStart={handleOnDragStart(monster.id)}
               onDoubleClick={handleOnDoubleClick(monster.id)}
             >
@@ -60,6 +70,14 @@ const styles = {
     max-width: 350px;
     background-color: rgba(26.1, 25.9, 31.5, 0.8);
     box-shadow: 2px 0 5px -2px rgba(255, 255, 255, 0.9);
+    ${mediaQuery[0]} {
+      min-width: 100vw;
+      max-height: 250px;
+    }
+    ${mediaQuery[2]} {
+      min-width: 100vw;
+      max-height: 250px;
+    }
   `,
   heading: css`
     letter-spacing: 3px;

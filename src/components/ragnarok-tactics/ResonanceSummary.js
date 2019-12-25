@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, Fragment } from "react"
 import { css } from "@emotion/core"
 import BONUS_ELEMENT_BUFFS from "./data/elementBuffs.json"
 import BONUS_AURA_BUFFS from "./data/auraBuffs.json"
+import { mediaQuery } from "../../utils.js"
 
 function ResonanceSummary({ monsterList }) {
   const [resonanceAuraCount, setResonanceAuraCount] = useState({})
@@ -129,44 +130,49 @@ function ResonanceSummary({ monsterList }) {
         <h2 css={styles.resonanceSummaryHeading}>SUMMARY</h2>
       </div>
       <div css={styles.resonanceSummaryContent}>
-        <div css={styles.resonanceSummaryElementCount}>
-          {Object.keys(resonanceElementCount).map((key, index) => {
-            return (
-              <div css={styles.resonanceElementCountInfo} key={index}>
-                <img
-                  css={styles.elementImg}
-                  src={require(`../../images/elements/${key.toLowerCase()}.png`)}
-                  alt={key}
-                />{" "}
-                <span css={styles.elementCountNumber}>
-                  x{resonanceElementCount[key]}
-                </span>
-              </div>
-            )
-          })}
-        </div>
-        <div css={styles.resonanceSummaryAuraCount}>
-          {Object.keys(resonanceAuraCount).map((key, index) => {
-            return (
-              <div css={styles.resonanceAuraCountInfo} key={index}>
-                <img
-                  css={styles.auraImage}
-                  src={require(`../../images/auras/${key.toLowerCase()}.png`)}
-                  alt={key}
-                />{" "}
-                <span css={styles.elementCountNumber}>
-                  x{resonanceAuraCount[key]}
-                </span>
-              </div>
-            )
-          })}
+        <div css={styles.resonanceSummaryBonusContainer}>
+          <div css={styles.resonanceSummaryElementCount}>
+            {Object.keys(resonanceElementCount).map((key, index) => {
+              return (
+                <div css={styles.resonanceElementCountInfo} key={index}>
+                  <img
+                    css={styles.elementImg}
+                    src={require(`../../images/elements/${key.toLowerCase()}.png`)}
+                    alt={key}
+                  />{" "}
+                  <span css={styles.elementCountNumber}>
+                    x{resonanceElementCount[key]}
+                  </span>
+                </div>
+              )
+            })}
+          </div>
+          <div css={styles.resonanceSummaryAuraCount}>
+            {Object.keys(resonanceAuraCount).map((key, index) => {
+              return (
+                <div css={styles.resonanceAuraCountInfo} key={index}>
+                  <img
+                    css={styles.auraImage}
+                    src={require(`../../images/auras/${key.toLowerCase()}.png`)}
+                    alt={key}
+                  />{" "}
+                  <span css={styles.elementCountNumber}>
+                    x{resonanceAuraCount[key]}
+                  </span>
+                </div>
+              )
+            })}
+          </div>
         </div>
 
         <div css={styles.resonanceSummaryBuffs}>
           <div css={styles.resonanceSummaryElementBuffs}>
             {resonanceElementBuffs.length ? (
               <Fragment>
-                <span css={styles.buffsHeading}>Element buffs</span>
+                <div css={styles.buffsHeadingContainer}>
+                  <span css={styles.buffsHeading}>Element buffs</span>
+                </div>
+
                 <div css={styles.buffsDetailContainer}>
                   {resonanceElementBuffs.map((elementBuff, index) => {
                     return (
@@ -183,7 +189,9 @@ function ResonanceSummary({ monsterList }) {
           <div css={styles.resonanceSummaryAuraBuffs}>
             {resonanceAuraBuffs.length ? (
               <Fragment>
-                <span css={styles.buffsHeading}>Aura buffs</span>
+                <div css={styles.buffsHeadingContainer}>
+                  <span css={styles.buffsHeading}>Aura buffs</span>
+                </div>
                 <div css={styles.buffsDetailContainer}>
                   {resonanceAuraBuffs.map((auraBuff, index) => {
                     return (
@@ -233,6 +241,16 @@ const styles = {
     margin-left: 10px;
     font-size: 24px;
   `,
+  buffsHeadingContainer: css`
+    ${mediaQuery[0]} {
+      text-align: center;
+      margin-top: 20px;
+    }
+    ${mediaQuery[2]} {
+      text-align: center;
+      margin-top: 20px;
+    }
+  `,
   buffsHeading: css`
     width: 100%;
     font-size: 20px;
@@ -261,6 +279,22 @@ const styles = {
   `,
   resonanceSummaryContent: css`
     display: flex;
+    ${mediaQuery[0]} {
+      flex-direction: column;
+    }
+    ${mediaQuery[2]} {
+      flex-direction: column;
+    }
+  `,
+  resonanceSummaryBonusContainer: css`
+    ${mediaQuery[0]} {
+      display: flex;
+      justify-content: center;
+    }
+    ${mediaQuery[2]} {
+      display: flex;
+      justify-content: center;
+    }
   `,
   resonanceSummaryAuraCount: css`
     margin-right: 50px;
@@ -270,6 +304,15 @@ const styles = {
   `,
   resonanceSummaryBuffs: css`
     display: flex;
+    ${mediaQuery[0]} {
+      flex-direction: column;
+      justify-content: center;
+    }
+    ${mediaQuery[2]} {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   `,
   resonanceSummaryElementBuffs: css`
     max-width: 350px;
