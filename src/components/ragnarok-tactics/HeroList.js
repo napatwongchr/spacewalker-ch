@@ -97,6 +97,14 @@ const styles = {
     flex-wrap: wrap;
     overflow-y: scroll;
     max-height: 86%;
+    ${mediaQuery[0]} {
+      max-height: 60%;
+      padding: 0 30px;
+    }
+    ${mediaQuery[2]} {
+      max-height: 60%;
+      padding: 0 30px;
+    }
   `,
   monster: css`
     display: inline;
