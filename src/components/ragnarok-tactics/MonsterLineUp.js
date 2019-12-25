@@ -254,6 +254,9 @@ const styles = {
   `,
   monsterNameContainer: css`
     text-align: center;
+    ${mediaQuery[0]} {
+      text-align: left;
+    }
   `,
   monsterName: css`
     font-size: 20px;

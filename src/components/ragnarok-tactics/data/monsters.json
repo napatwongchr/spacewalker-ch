@@ -332,6 +332,15 @@
       "auras": ["Light"],
       "additionalAuras": [],
       "isAdditionalAuraCheck": true
+    },
+    {
+      "id": "38",
+      "name": "Knight of Windstorm",
+      "essence": "",
+      "element": "Scissors",
+      "auras": ["Water"],
+      "additionalAuras": [],
+      "isAdditionalAuraCheck": true
     }
   ]
 }
