@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 import HeroList from "../components/ragnarok-tactics/HeroList"
 import ResonanceCalArea from "../components/ragnarok-tactics/ResonanceCalArea"
-import wallpaper from "../images/main-bg.png"
+import wallpaper from "../images/main-bg.jpg"
 
 import { mediaQuery } from "../utils"
 import "bootstrap/dist/css/bootstrap.min.css"
