@@ -4,6 +4,9 @@ import { Modal, Button, Tabs, Tab, Form } from "react-bootstrap"
 import { css } from "@emotion/core"
 import { mediaQuery } from "../../utils"
 import essencesData from "./data/essences"
+import Loadable from "@loadable/component"
+
+const NoCardInfoBox = Loadable(() => import("./NoCardInfoBox"))
 
 function MonsterLineUp({ monsterList, setMonsterList }) {
   const [selectedMonster, setSelectedMonster] = useState(null)
@@ -196,32 +199,6 @@ const Option = props => {
           </Fragment>
         ) : null}
       </div>
-    </div>
-  )
-}
-
-function NoCardInfoBox() {
-  let windowWidth = Math.max(
-    document.documentElement.clientWidth,
-    window.innerWidth || 0
-  )
-  if (
-    windowWidth <= 576 ||
-    (windowWidth > 576 && windowWidth <= 768) ||
-    (windowWidth > 768 && windowWidth <= 992) ||
-    (windowWidth > 992 && windowWidth <= 1200)
-  ) {
-    return (
-      <div css={styles.noCardInfoBox}>
-        <span>Tap monster in hero list</span>
-      </div>
-    )
-  }
-  return (
-    <div css={styles.noCardInfoBox}>
-      <span>Double click monster</span>
-      <span>or</span>
-      <span>Drag monster here !</span>
     </div>
   )
 }
