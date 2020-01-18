@@ -341,6 +341,15 @@
       "auras": ["Water"],
       "additionalAuras": [],
       "isAdditionalAuraCheck": true
+    },
+    {
+      "id": "39",
+      "name": "Dark Snake Lord",
+      "essence": "",
+      "element": "Paper",
+      "auras": ["Light"],
+      "additionalAuras": [],
+      "isAdditionalAuraCheck": true
     }
   ]
 }
