@@ -4,6 +4,9 @@ import { Modal, Button, Tabs, Tab, Form } from "react-bootstrap"
 import { css } from "@emotion/core"
 import { mediaQuery } from "../../utils"
 import essencesData from "./data/essences"
+import Loadable from "@loadable/component"
+
+const NoCardInfoBox = Loadable(() => import("./NoCardInfoBox"))
 
 function MonsterLineUp({ monsterList, setMonsterList }) {
   const [selectedMonster, setSelectedMonster] = useState(null)
@@ -117,11 +120,7 @@ function MonsterLineUp({ monsterList, setMonsterList }) {
           )
         })
       ) : (
-        <div css={styles.noCardInfoBox}>
-          <span>Double click monster</span>
-          <span>or</span>
-          <span>Drag monster here !</span>
-        </div>
+        <NoCardInfoBox />
       )}
 
       <Modal show={show} onHide={handleClose} centered>
@@ -279,18 +278,6 @@ const styles = {
     ${mediaQuery[0]} {
       flex-direction: column;
     }
-  `,
-  noCardInfoBox: css`
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 24px;
-    width: 100%;
-    border: 3px dashed rgb(238, 238, 238);
-    border-radius: 3px;
-    color: white;
-    padding: 70px 0;
-    letter-spacing: 3px;
   `,
   cardDeleteBtn: css`
     position: absolute;
