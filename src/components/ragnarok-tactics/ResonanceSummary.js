@@ -287,6 +287,7 @@ const styles = {
     }
   `,
   resonanceSummaryBonusContainer: css`
+    display: flex;
     ${mediaQuery[0]} {
       display: flex;
       justify-content: center;
