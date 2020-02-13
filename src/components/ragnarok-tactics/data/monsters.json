@@ -350,6 +350,15 @@
       "auras": ["Light"],
       "additionalAuras": [],
       "isAdditionalAuraCheck": true
+    },
+    {
+      "id": "40",
+      "name": "Dracula",
+      "essence": "",
+      "element": "Rock",
+      "auras": ["Fire"],
+      "additionalAuras": [],
+      "isAdditionalAuraCheck": true
     }
   ]
 }
