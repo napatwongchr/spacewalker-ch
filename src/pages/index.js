@@ -5,31 +5,12 @@ import { Global, css, keyframes } from "@emotion/core"
 import SEO from "../components/seo"
 import spacewalkerIcon from "../images/spacewalker-icon.png"
 import facebookIcon from "../images/facebook.png"
-import lineIcon from "../images/line.png"
-import twitterIcon from "../images/twitter.png"
-import youtubeIcon from "../images/youtube.png"
 
 const socials = [
-  {
-    src: youtubeIcon,
-    url: "https://www.youtube.com/channel/UC6QIx75fjE2ee135egI4fDg",
-    alt: "youtube icon",
-  },
   {
     src: facebookIcon,
     url: "https://www.facebook.com/spacewalker.ch",
     alt: "facebook icon",
-  },
-  {
-    src: lineIcon,
-    url:
-      "https://line.me/ti/g2/nES-h_tpXRighsqWgRDHLw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
-    alt: "line icon",
-  },
-  {
-    src: twitterIcon,
-    alt: "twitter icon",
-    url: "https://twitter.com/spacewalker_ch",
   },
 ]
 
