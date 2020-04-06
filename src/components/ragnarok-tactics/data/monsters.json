@@ -359,6 +359,15 @@
       "auras": ["Fire"],
       "additionalAuras": [],
       "isAdditionalAuraCheck": true
+    },
+    {
+      "id": "41",
+      "name": "G Harword",
+      "essence": "",
+      "element": "White",
+      "auras": ["Earth"],
+      "additionalAuras": ["Wind"],
+      "isAdditionalAuraCheck": true
     }
   ]
 }
