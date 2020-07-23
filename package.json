@@ -30,6 +30,8 @@
     "uuid": "^3.3.3"
   },
   "devDependencies": {
+    "@4tw/cypress-drag-drop": "^1.4.0",
+    "cypress": "^4.11.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -37,6 +39,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "cypress:open": "cypress open",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",

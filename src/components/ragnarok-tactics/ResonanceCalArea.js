@@ -29,6 +29,7 @@ function ResonanceCalArea({ monsterList, setMonsterList }) {
 
   return (
     <div
+      data-testid="hero-reso-cal-area"
       css={styles.resonanceCalSection}
       onDragOver={handleDragOver}
       onDrop={handleOnDrop}
