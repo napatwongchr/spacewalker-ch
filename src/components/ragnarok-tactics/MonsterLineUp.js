@@ -68,7 +68,7 @@ function MonsterLineUp({ monsterList, setMonsterList }) {
     monsterList.find(monster => monster.id === selectedMonster) || {}
 
   return (
-    <div css={styles.container}>
+    <div css={styles.container} data-testid="hero-lineup-container">
       {monsterList.length ? (
         monsterList.map(monster => {
           let monsterImgName = monster.name

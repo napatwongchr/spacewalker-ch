@@ -52,6 +52,8 @@ function MonsterPoolList({ monsterList, setMonsterList }) {
               onTouchStartCapture={handleOnTouchStartCapture(monster.id)}
               onDragStart={handleOnDragStart(monster.id)}
               onDoubleClick={handleOnDoubleClick(monster.id)}
+              data-testid={`hero-card-${monster.id}`}
+              data-label="hero-card"
             >
               <img
                 src={require(`../../images/monsters/${monsterImgName}.png`)}
